@@ -52,7 +52,7 @@
                     <li class="fish">blue fish</li>
                 </ul>
             </div>
-            <button onclick="">Technicolor Fish</button>
+            <button onclick="fishSelect()">Technicolor Fish</button>
         </section>
 
         <section id="bb5" class="bigbox">
@@ -89,8 +89,23 @@
 
         }
         //function 3
-
+        function bloodline(){
+          const doc=document;
+          let gp=doc.querySelector(".gp");
+          let p=doc.querySelector(".p");
+          let c=doc.querySelectorAll(".c");
+            gp.style.color="#550000";
+            p.style.color
+        }
         //function 4
+        function fishSelect(){
+            const doc=document;
+            let fish=doc.querySelectorAll("#bb4 > div > ul > .fish");
+            let redfish=fish[2];
+            let bluefish=fish[3];
+            redfish.style.color="red";
+            bluefish.style.color="blue";
+        }
 
         //function 5 & 6
         function button1(){
