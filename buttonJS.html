@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="">The Family Blood Line</button>
+            <button onclick="bloodline()">The Family Blood Line</button>
         </section>
 
         <section id="bb4" class="bigbox">
@@ -61,8 +61,8 @@
                 <span>20</span>
             </div>
             <br>
-            <button onclick="">+1</button>
-            <button onclick="">+10</button>
+            <button onclick="buttoni()">+1</button>
+            <button onclick="buttonx()">+10</button>
         </section>
     </body>
     <script type="text/javascript">
@@ -94,8 +94,10 @@
           let gp=doc.querySelector(".gp");
           let p=doc.querySelector(".p");
           let c=doc.querySelectorAll(".c");
-            gp.style.color="#550000";
-            p.style.color
+            gp.style.backgroundColor="#550000";
+            p.style.backgroundColor="#991100";
+            c[0].style.backgroundColor="#dd1111";
+            c[1].style.backgroundColor="#dd1111";
         }
         //function 4
         function fishSelect(){
@@ -108,13 +110,18 @@
         }
 
         //function 5 & 6
-        function button1(){
+        function buttoni(){
             const doc=document;
-            let counter=doc.querySelector("bb5 > content >  span");
-                counter=counter + 1;
+            let counter=doc.querySelector("#bb5 > div > span");
+            let value = counter.innerhtml;
+                value = value + 1;
+
         }
-        function button10(){
+        function buttonx(){
             const doc=document;
+            let counter=doc.querySelector("#bb5 > div > span");
+            let value = counter.innerhtml;
+                value = value + 10;
         }
     </script>
 </html>
